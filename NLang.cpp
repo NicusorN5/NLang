@@ -1,12 +1,6 @@
-﻿// NLang.cpp : Defines the entry point for the application.
-//
-
-#include "NLang.h"
-
-using namespace std;
+﻿#include "pch.h"
 
 int main()
 {
-	cout << "Hello CMake." << endl;
-	return 0;
+	std::print("C++ 23 test");
 }

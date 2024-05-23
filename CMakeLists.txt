@@ -12,10 +12,12 @@ endif()
 project ("NLang")
 
 # Add source to this project's executable.
-add_executable (NLang "NLang.cpp" "NLang.h")
+add_executable (NLang "NLang.cpp" "NLang.h" "pch.h")
+
+target_precompile_headers(NLang PUBLIC "pch.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET NLang PROPERTY CXX_STANDARD 20)
+  set_property(TARGET NLang PROPERTY CXX_STANDARD 23)
 endif()
 
 # TODO: Add tests and install targets if needed.
