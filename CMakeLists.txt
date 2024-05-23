@@ -12,9 +12,9 @@ endif()
 project ("NLang")
 
 # Add source to this project's executable.
-add_executable (NLang "NLang.cpp" "NLang.h" "pch.h")
+add_executable (NLang "NLang.cpp")
 
-target_precompile_headers(NLang PUBLIC "pch.h")
+target_precompile_headers(NLang PUBLIC "pch.hpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET NLang PROPERTY CXX_STANDARD 23)
