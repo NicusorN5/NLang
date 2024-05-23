@@ -1,6 +1,6 @@
 ﻿#include "pch.hpp"
 
-int main()
+int main(int numArgs, char **args)
 {
-	std::print("C++ 23 test");
+	
 }
