@@ -38,6 +38,8 @@ static i32 Main(ArgsList args)
 		case 1:
 			ShowHelp();
 			return 0;
+		default:
+			return 0;
 		}
 	}
 }
